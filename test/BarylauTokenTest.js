@@ -7,7 +7,6 @@ describe('barylau Token', () => {
         Token = await ethers.getContractFactory('BarylauToken');
         token = await Token.deploy(10);
         [owner, address1, address2, _] = await ethers.getSigners();
-        console.log(_);
     })
 
     describe('Deployment', () => {
